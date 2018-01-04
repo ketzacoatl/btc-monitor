@@ -37,9 +37,12 @@ resolver: lts-10.0
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - .
+
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps:
+  - git: https://github.com/ketzacoatl/haskell-bitcoin-api
+    commit: dd69ce04cb8ed0141193d64d826c3770b08da6cd
 
 #extra-deps:
 # - git: https://github.com/GildedHonour/bitcoin_api
